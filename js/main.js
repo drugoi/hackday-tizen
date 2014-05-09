@@ -6,7 +6,10 @@ $(window).load(function(){
     });
 	
 	
-	$('.contents').on("click", function(){
-		$('#textbox').html($('#textbox').html() == "Hackday" ? "Sample" : "Hackday");				
-	});
+	$('<a href="tel:112" id="tel">').appendTo(document);
+	$('#tel').click();
+	
+//	$('.contents').on("click", function(){
+//		$('#textbox').html($('#textbox').html() == "Hackday" ? "Sample" : "Hackday");				
+//	});
 });
