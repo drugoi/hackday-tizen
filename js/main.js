@@ -5,8 +5,6 @@ $(window).load(function(){
             tizen.application.getCurrentApplication().exit();
     });
 	
-	
-	$('<a href="tel:112" id="tel">').appendTo(document);
 	$('#tel').click();
 	
 //	$('.contents').on("click", function(){
