@@ -1,6 +1,12 @@
 $(window).load(function(){
     $(document).on('tap', function(e) {
-        alert('Yo!')        
+        $('.container__game').fadeOut(100);
+        $('.game-message').fadeIn();
+    });
+    
+    $('.keep-playing-button').on('click', function(e) {
+        $('.game-message').fadeOut(100);
+        $('.container__game').fadeIn();
     });
 	
     function removeStartMessage() {
