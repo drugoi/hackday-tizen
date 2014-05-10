@@ -18,13 +18,9 @@
 </head>
 <body>
   <div class="container container__start">
-      <h2 class="title">2048 click to start</h2>
+      <h1 class="title title__start">2048</h1>
   </div>
   <div class="container container__game" style="display:none;">
-    <div class="above-game" style="display: none;">
-        <a class="restart-button">Новая игра</a>
-    </div>
-
     <div class="game-container">
       <div class="game-message">
         <p></p>
@@ -34,7 +30,7 @@
         </div>
         <div class="lower">
             <a class="keep-playing-button">Продолжить игру</a>
-            <a class="retry-button">Попробуй снова</a>
+            <a class="restart-button">Новая игра</a>
         </div>
       </div>
 
@@ -70,7 +66,8 @@
       </div>
     </div>
   </div>
-
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/jquery.mobile.custom.min.js"></script>
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>
   <script src="js/animframe_polyfill.js"></script>
@@ -81,5 +78,6 @@
   <script src="js/local_storage_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

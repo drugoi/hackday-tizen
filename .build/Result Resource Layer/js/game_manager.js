@@ -95,6 +95,11 @@ GameManager.prototype.actuate = function () {
     bestScore:  this.storageManager.getBestScore(),
     terminated: this.isGameTerminated()
   });
+    var self = this;
+    $(document).on('tap', function(e) {
+        $('.game-message').fadeIn();
+//        self.actuate();
+    });
 
 };
 
@@ -183,7 +188,7 @@ GameManager.prototype.move = function (direction) {
     this.addRandomTile();
 
     if (!this.movesAvailable()) {
-      this.over = true; // Game over!
+      this.over = true;
     }
 
     this.actuate();

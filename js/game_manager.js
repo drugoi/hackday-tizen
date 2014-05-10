@@ -98,7 +98,7 @@ GameManager.prototype.actuate = function () {
     var self = this;
     $(document).on('tap', function(e) {
         $('.game-message').fadeIn();
-        self.actuate();
+//        self.actuate();
     });
 
 };

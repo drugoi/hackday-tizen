@@ -1,13 +1,16 @@
-window.onload = function() {
-	document.addEventListener('tizenhwkey', function(e) {
-        if(e.keyName == "back")
-            tizen.application.getCurrentApplication().exit();
+$(window).load(function(){    
+    $('.keep-playing-button').on('tap', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('ok');
+        $('.game-message').fadeOut(100);
+        $('.container__game').fadeIn();
     });
+	
+    function removeStartMessage() {
+        $('.container__start').fadeOut(500);
+        $('.container__game').fadeIn(700);
+    }
     
-    document.querySelectorAll('.container__start').style.display = 'none';
-    document.querySelectorAll('.container__game').style.display = 'block'
-//	
-//	$('.contents').on("click", function(){
-//		$('#textbox').html($('#textbox').html() == "Basic" ? "Sample" : "Basic");				
-//	});   
-}
+    setTimeout(removeStartMessage(), 10000);
+});

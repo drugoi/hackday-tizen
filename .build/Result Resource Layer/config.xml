@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/test" version="1.0.0" viewmodes="maximized">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/test" version="1.0.0" viewmodes="maximized">
     <tizen:application id="Mb6Bknom8d.test" package="Mb6Bknom8d" required_version="2.2"/>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="icon.png"/>
-    <name>test</name>
+    <name>2048!</name>
 </widget>
