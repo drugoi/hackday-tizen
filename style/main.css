@@ -24,6 +24,9 @@ h1.title {
 
 .title__start {
     text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 40px;
 }
 
 @-webkit-keyframes move-up {
@@ -516,7 +519,7 @@ hr {
     padding: 0 20px; }
 
   h1.title {
-    font-size: 27px;
+    font-size: 40px;
     margin-top: 15px; }
 
   .container {
