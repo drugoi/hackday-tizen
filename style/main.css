@@ -22,6 +22,10 @@ h1.title {
   display: block;
   float: left; }
 
+.title__start {
+    text-align: center;
+}
+
 @-webkit-keyframes move-up {
   0% {
     top: 25px;

@@ -1,4 +1,3 @@
-
 $(window).load(function(){
 	document.addEventListener('tizenhwkey', function(e) {
         if(e.keyName == "back")
@@ -6,13 +5,13 @@ $(window).load(function(){
     });
 	
     function removeStartMessage() {
-        $('.container__start').fadeOut();
-        $('.container__game').fadeIn();
+        $('.container__start').fadeOut(500);
+        $('.container__game').fadeIn(700);
     }
     
-    setTimeout(removeStartMessage(), 3000);
+    setTimeout(removeStartMessage(), 5000);
 	
-	$('.contents').on("click", function(){
-		$('#textbox').html($('#textbox').html() == "Basic" ? "Sample" : "Basic");				
-	});
+//	$('.contents').on("click", function(){
+//		$('#textbox').html($('#textbox').html() == "Basic" ? "Sample" : "Basic");				
+//	});
 });
