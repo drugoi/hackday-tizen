@@ -1,9 +1,6 @@
 $(window).load(function(){
-	document.addEventListener('tizenhwkey', function(e) {
-        if(e.keyName == "back") {
-//             tizen.application.getCurrentApplication().exit();
-            alert('Yo!')
-        }
+    $(document).on('tap', function(e) {
+        alert('Yo!')        
     });
 	
     function removeStartMessage() {
@@ -12,8 +9,4 @@ $(window).load(function(){
     }
     
     setTimeout(removeStartMessage(), 10000);
-	
-//	$('.contents').on("click", function(){
-//		$('#textbox').html($('#textbox').html() == "Basic" ? "Sample" : "Basic");				
-//	});
 });
