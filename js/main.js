@@ -1,5 +1,5 @@
 $(window).load(function(){    
-    $(document).not('.game-message').on('tap', function(e) {
+    $(document).on('tap', function(e) {
         $('.game-message').fadeIn();
     });
     $('.keep-playing-button').on('tap', function(e) {
@@ -12,6 +12,5 @@ $(window).load(function(){
         $('.container__start').fadeOut(500);
         $('.container__game').fadeIn(700);
     }
-    
     setTimeout(removeStartMessage(), 10000);
 });
