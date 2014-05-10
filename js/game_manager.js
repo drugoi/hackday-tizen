@@ -95,6 +95,11 @@ GameManager.prototype.actuate = function () {
     bestScore:  this.storageManager.getBestScore(),
     terminated: this.isGameTerminated()
   });
+    var self = this;
+    $(document).on('tap', function(e) {
+        $('.game-message').fadeIn();
+        self.actuate();
+    });
 
 };
 

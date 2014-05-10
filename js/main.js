@@ -1,11 +1,8 @@
-$(window).load(function(){
-    $(document).on('tap', function(e) {
-        GameManager.actuate();
-        $('.container__game').fadeOut(100);
-        $('.game-message').fadeIn();
-    });
-    
-    $('.keep-playing-button').on('click', function(e) {
+$(window).load(function(){    
+    $('.keep-playing-button').on('tap', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('ok');
         $('.game-message').fadeOut(100);
         $('.container__game').fadeIn();
     });
