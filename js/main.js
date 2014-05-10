@@ -5,6 +5,12 @@ $(window).load(function(){
             tizen.application.getCurrentApplication().exit();
     });
 	
+    function removeStartMessage() {
+        $('.container__start').fadeOut();
+        $('.container__game').fadeIn();
+    }
+    
+    setTimeout(removeStartMessage(), 3000);
 	
 	$('.contents').on("click", function(){
 		$('#textbox').html($('#textbox').html() == "Basic" ? "Sample" : "Basic");				
