@@ -1,5 +1,6 @@
 $(window).load(function(){
     $(document).on('tap', function(e) {
+        GameManager.actuate();
         $('.container__game').fadeOut(100);
         $('.game-message').fadeIn();
     });
