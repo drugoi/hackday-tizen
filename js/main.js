@@ -1,10 +1,11 @@
 $(window).load(function(){    
+    $(document).not('.game-message').on('tap', function(e) {
+        $('.game-message').fadeIn();
+    });
     $('.keep-playing-button').on('tap', function(e) {
         e.preventDefault();
         e.stopPropagation();
-        console.log('ok');
         $('.game-message').fadeOut(100);
-        $('.container__game').fadeIn();
     });
 	
     function removeStartMessage() {
