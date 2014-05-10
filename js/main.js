@@ -1,13 +1,18 @@
-window.onload = function() {
+
+$(window).load(function(){
 	document.addEventListener('tizenhwkey', function(e) {
         if(e.keyName == "back")
             tizen.application.getCurrentApplication().exit();
     });
+	
+    function removeStartMessage() {
+        $('.container__start').fadeOut();
+        $('.container__game').fadeIn();
+    }
     
-    document.querySelectorAll('.container__start').style.display = 'none';
-    document.querySelectorAll('.container__game').style.display = 'block'
-//	
-//	$('.contents').on("click", function(){
-//		$('#textbox').html($('#textbox').html() == "Basic" ? "Sample" : "Basic");				
-//	});   
-}
+    setTimeout(removeStartMessage(), 3000);
+	
+	$('.contents').on("click", function(){
+		$('#textbox').html($('#textbox').html() == "Basic" ? "Sample" : "Basic");				
+	});
+});

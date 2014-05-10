@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/test" version="1.0.0" viewmodes="maximized">
-    <access origin="http://192.168.1.13:37807" subdomains="true"/>
+    <access origin="http://192.168.1.13:33076" subdomains="true"/>
     <tizen:application id="Mb6Bknom8d.test" package="Mb6Bknom8d" required_version="2.2"/>
-    <content src="http://192.168.1.13:37807/index.html"/>
+    <content src="http://192.168.1.13:33076/index.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="icon.png"/>
     <name>test</name>
